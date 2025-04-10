@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken';
 export const authMiddleware = (req, res, next) => {
     const authHeader = req.headers['authorization'];
    
-    // This is where you can check if the token is valid 
+
     if (!authHeader) {
     }
     const token = authHeader.split(' ')[1];
